@@ -1,1 +1,36 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>idontlike.work</title><link href=static/css/app.2b8909cdee45fe38d45907138c1d84ac.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=static/js/manifest.37a2ecbb1d1b7e6c9ada.js></script><script type=text/javascript src=static/js/vendor.5e517ca699d31c067f33.js></script><script type=text/javascript src=static/js/app.8fde23edf09d6810fb01.js></script></body></html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <title>idontlike.work</title>
+  <link href=static/css/app.2b8909cdee45fe38d45907138c1d84ac.css rel=stylesheet>
+</head>
+
+<body>
+  <div id=app></div>
+  <script type="text/javascript">
+    (function (l) {
+      if (l.search) {
+        var q = {};
+        l.search.slice(1).split('&').forEach(function (v) {
+          var a = v.split('=');
+          q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+        });
+        if (q.p !== undefined) {
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + (q.p || '') +
+            (q.q ? ('?' + q.q) : '') +
+            l.hash
+          );
+        }
+      }
+    }(window.location))
+  </script>
+  <script type=text/javascript src=static/js/manifest.37a2ecbb1d1b7e6c9ada.js></script>
+  <script type=text/javascript src=static/js/vendor.5e517ca699d31c067f33.js></script>
+  <script type=text/javascript src=static/js/app.fb117927a9fa3e3c70b7.js></script>
+</body>
+
+</html>
