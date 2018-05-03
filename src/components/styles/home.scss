@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
+  margin-top: 10px;
 
   .logo {
     width: 100px;
@@ -98,6 +99,7 @@
   .foo-logo,
   .foo-social {
     margin-right: 10px;
+    cursor: pointer;
   }
 }
 

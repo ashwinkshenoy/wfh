@@ -6,7 +6,9 @@
       <router-link :to="`/`">
         <img src="../assets/logo.png" alt="logo" class="logo">
       </router-link>
-      <a href="#" class="link add-reason">Got a creative reason ? Share with us !</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhkzp_cKi2lL_jSFrQ1TlTK_6LlE8APTdRbYt9yZrljkHsqA/viewform" target="_blank" class="link add-reason">
+        Got a creative reason ? Share with us !
+      </a>
     </div>
     <!-- Header end -->
 
@@ -34,8 +36,8 @@
       <div></div>
       <div class="right-content">
         <div class="hd1">Share only with close friends</div>
-        <img src="@/assets/fb.svg" alt="playstore" class="foo-social">
-        <img src="@/assets/tw.svg" alt="gassistance" class="foo-social">
+        <img src="@/assets/fb.svg" alt="playstore" class="foo-social" @click="socialFb()">
+        <img src="@/assets/tw.svg" alt="gassistance" class="foo-social" @click="socialTwitter()">
       </div>
     </div>
     <!-- Footer end -->
@@ -119,6 +121,20 @@
           console.log("I'm out");
           router.push({ path: '/bookmark' });
         }
+      },
+      socialFb() {
+        window.open(
+          'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fidontlike.work%2F',
+          'yyyyy',
+          'width=500,height=500,resizable=no,toolbar=no,menubar=no,location=no,status=no'
+        );
+      },
+      socialTwitter() {
+        window.open(
+          'http://twitter.com/share?text=Check out the awesome Work From Home Reason Generator&url=https://idontlike.work',
+          'yyyyy',
+          'width=500,height=500,resizable=no,toolbar=no,menubar=no,location=no,status=no'
+        );
       },
     },
   };

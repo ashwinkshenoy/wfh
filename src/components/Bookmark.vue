@@ -1,19 +1,21 @@
 <template>
-  <div class="container">
+  <div>
 
-    <!-- Header -->
-    <div class="header">
-      <router-link :to="`/`">
-        <img src="@/assets/logo.png" alt="logo" class="logo">
-      </router-link>
-      <a href="#" class="link">Got a creative reason ? Share with us !</a>
-    </div>
-    <!-- Header end -->
+    <div class="container">
+      <!-- Header -->
+      <div class="header">
+        <router-link :to="`/`">
+          <img src="@/assets/logo.png" alt="logo" class="logo">
+        </router-link>
+        <a href="#" class="link">Got a creative reason ? Share with us !</a>
+      </div>
+      <!-- Header end -->
 
-    <div class="bookmark-content">
-      <div class="hd1">One more thing!!!</div>
-      <div class="desc1">Just Scroll Down to see</div>
-      <img src="@/assets/down-arrow.svg" alt="down" class="down-arrow bounce">
+      <div class="bookmark-content">
+        <div class="hd1">One more thing!!!</div>
+        <div class="desc1">Just scroll down to see</div>
+        <img src="@/assets/down-arrow.svg" alt="down" class="down-arrow bounce">
+      </div>
     </div>
 
     <div class="bookmark-section2">
