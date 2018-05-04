@@ -30,7 +30,9 @@
     <div class="footer">
       <div class="left-content">
         <div class="hd1">Also experience it on</div>
-        <img src="@/assets/playstore.svg" alt="playstore" class="foo-logo">
+        <a href="https://play.google.com/store/apps/details?id=work.idontlike.idontlikework" target="_blank">
+          <img src="@/assets/playstore.svg" alt="playstore" class="foo-logo">
+        </a>
         <img src="@/assets/assistance.svg" alt="gassistance" class="foo-logo">
       </div>
       <div></div>
