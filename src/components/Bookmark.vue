@@ -48,7 +48,6 @@
     methods: {
       checkIfBookmarkShown() {
         if (localStorage.getItem("showBookmark") != null) {
-          console.log("true");
           document.documentElement.style.setProperty('--main-bg-color', "rgb(219, 80, 74)");
           this.step2 = true;
         } else {

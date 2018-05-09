@@ -68,20 +68,18 @@
     async created() {
       try {
         const response = await axios.get(`https://s3.ap-south-1.amazonaws.com/idontlikework/wfh-reasons.json`);
-        console.log(response);
-
         this.reasons = this.shuffle(response.data);
         this.random = this.getRandomInt(1, this.reasons.length);
       } catch (e) {
         console.log(e);
       }
+      this.setBgColor();
     },
     beforeMount() {
       document.addEventListener('mouseout', this.bookmarkListen);
     },
     mounted() {
       this.colorList = this.shuffle(this.colorList);
-      this.setBgColor();
     },
     beforeDestroy() {
       document.removeEventListener('mouseout', this.bookmarkListen);
